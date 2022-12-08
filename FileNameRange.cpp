@@ -78,6 +78,36 @@ int main(int argc, char* argv[])
     assert(returnIndex("test_hiker.sh")=="[5,10]");
     assert(returnIndex("tests_hiker.sh")=="[6,11]");
     assert(returnIndex("test_hiker.coffee")=="[5,10]");
-
+    assert(returnIndex("hiker_spec.coffee")=="[0,5]");
+    assert(returnIndex("hikerTest.chpl")=="[0,5]");
+    assert(returnIndex("hiker.tests.c")=="[0,5]");
+    assert(returnIndex("hiker_tests.c")=="[0,5]");
+    assert(returnIndex("hiker_test.c")=="[0,5]");
+    assert(returnIndex("hiker_Test.c")=="[0,5]");
+    assert(returnIndex("HikerTests.cpp")=="[0,5]");
+    assert(returnIndex("hikerTests.cpp")=="[0,5]");
+    assert(returnIndex("HikerTest.cs")=="[0,5]");
+    assert(returnIndex("HikerTest.java")=="[0,5]");
+    assert(returnIndex("DiamondTest.kt")=="[0,7]");
+    assert(returnIndex("HikerTest.php")=="[0,5]");
+    assert(returnIndex("hikerTest.js")=="[0,5]");
+    assert(returnIndex("hiker-test.js")=="[0,5]");
+    assert(returnIndex("hiker-spec.js")=="[0,5]");
+    assert(returnIndex("hiker.test.js")=="[0,5]");
+    assert(returnIndex("hiker.tests.ts")=="[0,5]");
+    assert(returnIndex("hiker_tests.erl")=="[0,5]");
+    assert(returnIndex("hiker_test.clj")=="[0,5]");
+    assert(returnIndex("fizzBuzz_test.d")=="[0,8]");
+    assert(returnIndex("hiker_test.go")=="[0,5]");
+    assert(returnIndex("hiker.tests.R")=="[0,5]");
+    assert(returnIndex("hikertests.swift")=="[0,5]");
+    assert(returnIndex("HikerSpec.groovy")=="[0,5]");
+    assert(returnIndex("hikerSpec.feature")=="[0,5]");
+    assert(returnIndex("hiker.feature")=="[0,5]");
+    assert(returnIndex("hiker.fun")=="[0,5]");
+    assert(returnIndex("hiker.t")=="[0,5]");
+    assert(returnIndex("hiker.plt")=="[0,5]");
+    assert(returnIndex("hiker")=="[0,5]");
+    
     return EXIT_SUCCESS;
 }
